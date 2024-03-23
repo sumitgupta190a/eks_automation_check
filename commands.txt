@@ -1,0 +1,81 @@
+  510  cd walkover/
+  511  ls
+  512  cd tfp/
+  513  clear
+  514  ls
+  515  terraform init
+  516  terraform validate
+  517  terraform plan
+  518  terraform apply --auto-approv
+  519  terraform apply -help
+  520  terraform apply -auto-approve
+  521  ls
+  522  vim t
+  523  ls
+  524  vim tf_GKS.tf 
+  525  clear
+  526  ls
+  527  terraform destroy -auto-approve
+  528  ifconfig
+  529  clear
+  530  ifconfig
+  531  curl www.google.com
+  532  clear
+  533  curl www.google.com
+  534  clear
+  535  ifconfig
+  536  ls
+  537* 
+  538  aws --version
+  539  aws eks update-kubeconfig --name pc-eks  --region ap-south-1
+  540  aws eks update-kubeconfig --name pc-eks 
+  541  kubectl get pods
+  542  ls
+  543  cd ..
+  544  ls
+  545  cd eks_automate/
+  546  ls
+  547  ls -a
+  548* 
+  549  ls
+  550  vim deploy.yml 
+  551  kubectl get pods
+  552  kubectl get svc
+  553  clear
+  554  kubectl get all
+  555  eksctl get nodes
+  556  # for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
+  557  ARCH=amd64
+  558  PLATFORM=$(uname -s)_$ARCH
+  559  curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+  560  # (Optional) Verify checksum
+  561  curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+  562  tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
+  563  sudo mv /tmp/eksctl /usr/local/bin
+  564  eksctl get nodes
+  565  eksctl get node
+  566  eksctl get nodegroup
+  567  clear
+  568  eksctl get nodegroup
+  569  eksctl get nodes
+  570* eksctl get nodes
+  571  eksctl get nodegroups --cluster=pc-eks
+  572  eksctl get nodes
+  573  kubectl get nodes
+  574  clear
+  575  kubectl get nodes -o wide
+  576  kubectl get all
+  577  cd ..
+  578  ls
+  579  cd ../..
+  580  ls
+  581  clear
+  582  ls
+  583  cd tf_eks/
+  584  ls
+  585  cat tf_GKS.tf 
+  586  clear
+  587  histort
+  588  clear
+  589  history
+
